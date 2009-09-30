@@ -4,7 +4,7 @@ Donate link: http://xfuxing.com/
 Tags: stats,widget,sidebar,simple
 Requires at least: 2.7.1
 Tested up to: 2.8.4
-Stable tag: 0.9
+Stable tag: 0.9.3
 
 Simple Stats Widget works as a widget!
 
@@ -59,6 +59,9 @@ If you have additional questions, please message in my blog, I will reply you as
 1. screenshot-1.jpg
 
 == Changelog ==
+
+= 0.9.3 [SEP 30, 2009] =
+* Fixed some minor bugs.
 
 = 0.9 [SEP 24, 2009] =
 * First release.

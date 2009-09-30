@@ -5,7 +5,7 @@ Author URI: http://xfuxing.com
 Plugin URI: http://xfuxing.com/2009/plug-in-released-simple-stats-widget-for-wordpress.html
 Description: A simple visit stats in sidebars!
 Author: freephp
-Version: 0.9
+Version: 0.9.3
 */
 load_plugin_textdomain('svS', 'wp-content/plugins/simple-stats-widget');
 
@@ -159,7 +159,7 @@ class svS_IpLocation
 		return($ip);
 	}
 	function code2flag(&$tag_country,&$tag_area,$ip){
-		$country = array(1 => array("亚","澳","奥","孟","白","比","伯","贝","百","玻","博","文","保","缅","喀","乍","智","刚","库","古","捷","丹","厄","萨","斐","芬","冈","德","直","希","关","危","几","圭","海","洪","匈","冰","以","意","牙","日","约","柬","哈","肯","韩","科","老","拉","黎","莱","列","立","卢","毛","墨","莫","纳","瑙","荷","朝","挪","秘","菲","葡","卡","罗","俄","沙","所","索","西","叙","塔","坦","泰","汤","特","突","英","美","委","越","也","津","扎","赞"),2 => array("安哥","安圭","安道","安提","阿曼","阿富","阿根","阿塞","阿拉","巴林","巴西","巴拉","巴哈","巴拿","巴基","巴巴","巴布","布基","布隆","加蓬","加纳","加拿","中国","中非","哥伦","哥斯","法国","伊朗","伊拉","爱尔","爱沙","马里","马耳","马拉","马来","马尔","马达","摩纳","摩洛","摩尔","蒙古","蒙特","埃及","埃塞","尼泊","尼加","波兰","波多","圣马","圣多","塞舌","塞浦","塞内","塞拉","新西","新加","斯里","斯威","格鲁","格林","苏丹","苏里","瑞典","瑞士","土耳","土库","乌干","乌克","乌拉","乌兹","南非","南斯","吉布","吉尔","多哥","多米","圣卢","圣文"),3 => array("北京","天津","河北","山西","内蒙","辽宁","吉林","黑龙","上海","江苏","浙江","安徵","福建","江西","山东","河南","湖北","湖南","广东","广西","海南","重庆","四川","贵州","云南","西藏","陕西","甘肃","青海","宁夏","新疆","香港","澳门","台湾","东北","东华","东南","中北","中南","中央","中山","中科","中经","佳木","全国","兰州","北方","华东","华中","华北","华南","南开","南昌","厦门","合肥","同济","哈尔","大庆","大连","太原","对外","成都","暨南","武汉","汉中","泉州","清华","澳门","福州","联通","聚友","艾提","西北","西华","西安","郑州","长城","长春","长江","长沙","集美","青岛","首都","黄河","宁波","复旦"),4 => array("阿尔巴","阿尔及","法属圭","法属玻","利比亚","利比里","尼日尔","尼日利","斯洛伐","斯洛文"),5 => array("印度","印度尼西亚"));
+		$country = array(1 => array("亚","澳","奥","孟","白","比","伯","贝","百","玻","博","文","保","缅","喀","乍","智","刚","库","古","捷","丹","厄","萨","斐","芬","冈","德","直","希","关","危","几","圭","海","洪","匈","冰","以","意","牙","日","约","柬","哈","肯","韩","科","老","拉","黎","莱","列","立","卢","毛","墨","莫","纳","瑙","荷","朝","挪","秘","菲","葡","卡","罗","俄","沙","所","索","西","叙","塔","坦","泰","汤","特","突","英","美","委","越","也","津","扎","赞"),2 => array("安哥","安圭","安道","安提","阿曼","阿富","阿根","阿塞","阿拉","巴林","巴西","巴拉","巴哈","巴拿","巴基","巴巴","巴布","布基","布隆","加蓬","加纳","加拿","中国","中非","哥伦","哥斯","法国","伊朗","伊拉","爱尔","爱沙","马里","马耳","马拉","马来","马尔","马达","摩纳","摩洛","摩尔","蒙古","蒙特","埃及","埃塞","尼泊","尼加","波兰","波多","圣马","圣多","塞舌","塞浦","塞内","塞拉","新西","新加","斯里","斯威","格鲁","格林","苏丹","苏里","瑞典","瑞士","土耳","土库","乌干","乌克","乌拉","乌兹","南非","南斯","吉布","吉尔","多哥","多米","圣卢","圣文"),3 => array("北京","天津","河北","山西","内蒙","辽宁","吉林","黑龙","上海","江苏","浙江","安徵","安徽","福建","江西","山东","河南","湖北","湖南","广东","广西","海南","重庆","四川","贵州","云南","西藏","陕西","甘肃","青海","宁夏","新疆","香港","澳门","台湾","东北","东华","东南","中北","中南","中央","中山","中科","中经","佳木","全国","兰州","北方","华东","华中","华北","华南","南开","南昌","厦门","合肥","同济","哈尔","大庆","大连","太原","对外","成都","暨南","武汉","汉中","泉州","清华","澳门","福州","联通","聚友","艾提","西北","西华","西安","郑州","长城","长春","长江","长沙","集美","青岛","首都","黄河","宁波","复旦"),4 => array("阿尔巴","阿尔及","法属圭","法属玻","利比亚","利比里","尼日尔","尼日利","斯洛伐","斯洛文"),5 => array("印度","印度尼西亚")); //2009-9-30
 //奇虎,欧洲,澳洲,联合国,雅虎,Intelsat公司,Microsoft,Teleglobe,Yahoo
 		$flagcode = array(1 => array("am","au","at","bd","by","be","bz","bj","bm","bo","bw","bn","bg","mm","cm","td","cl","cg","ck","cu","cz","dk","ec","sv","fj","fi","gm","de","gi","gr","gu","gt","gn","gy","ht","hn","hu","is","il","it","jm","jp","jo","kh","kz","ke","kr","kw","la","lv","lb","ls","li","lt","lu","mu","mx","mz","na","nr","nl","kp","no","pe","ph","pt","qa","ro","ru","sa","sb","so","es","sy","tj","tz","th","to","tt","tn","gb","us","ve","vn","ye","zw","zr","zm"),2 => array("ao","ai","ad","ag","om","af","ar","az","ae","bh","br","py","bs","pa","pk","bb","pg","bf","bi","ga","gh","ca","cn","cf","co","cr","fr","ir","iq","ie","ee","ml","mt","mw","my","mv","mg","mc","ma","md","mn","ms","eg","et","np","ni","pl","pr","sm","st","sc","cy","sn","sl","nz","sg","lk","sz","ge","gd","sd","sr","se","ch","tr","tm","ug","ua","uy","uz","za","yu","dj","kg","tg","do","lc","vc"),3 => array("cn"),4 => array("al","dz","gf","pf","ly","lr","ne","ng","sk","si"),5 => array("in","id"));
 		if (in_array($this->utf8Substr($tag_country,0,1),$country[1])) {
@@ -248,6 +248,9 @@ function svS_control() {
 }
 function svS_getbotname() {
 	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
+	if (preg_match("/BlogPeople/i",$useragent)) return "BlogPeople Bot"; //2009-9-30
+	if (preg_match("/sphere/i",$useragent)) return "Sphere.com Bot"; //2009-9-30
+	if (preg_match("/Jakarta\sCommons-HttpClient/i",$useragent)) return "amazonaws.com bot"; //2009-9-30
 	if (preg_match("/(googlebot|mediapartners-google)/i",$useragent)) return "Google bot";
 	if (preg_match("/msnbot/i",$useragent)) return "MSN bot";
 	if (preg_match("/(slurp|yahoo-mmcrawler)/i",$useragent)) return "Yahoo bot";
@@ -268,7 +271,7 @@ function svS_getbotname() {
 function svS_widget_write() {
 	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
 	$botflag=false;
-	if (preg_match("/(bot|survey|yahoo-mmcrawler|inktomi|crawl|spider|slurp|sohu-search|lycos|robozilla|mediapartners-google)/i", $useragent)) $botflag=true;
+	if (preg_match("/(BlogPeople|sphere|Jakarta\sCommons-HttpClient|bot|survey|yahoo-mmcrawler|inktomi|crawl|spider|slurp|sohu-search|lycos|robozilla|mediapartners-google)/i", $useragent)) $botflag=true; //2009-9-30
 	if (!$options['recordBot'])
 		if ($botflag) return;
 	$options = get_option('widget_svS');
@@ -299,8 +302,8 @@ function svS_widget_write() {
 	}
 	$url_head=(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !='off')?'https://':'http://';
 	$url_this = $url_head.$_SERVER ['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-	$title_this = wp_title('',false);
-	if (substr($url_this,0,-1) == get_option('home')) $title_this = get_option('blogname');
+	$title_this = trim(wp_title('',false)); //2009-9-30
+	if (empty($title_this)) $title_this = trim(get_option('blogname')); //2009-9-30
 	$timeago = date("M-d-Y H:i:s", mktime ());
 	$data = get_option('data_svS');
 	if (empty($data)) {
@@ -323,13 +326,14 @@ function svS_widget_write() {
 	$cacheArray[0]['title_this']=$title_this;
 	$cacheArray[0]['timeago']=$timeago;
 	for ($i=1;$i<$recordnum;$i++){
-		$cacheArray[$i]['country']=$data[$i-1]['country'];
-		$cacheArray[$i]['area']=$data[$i-1]['area'];
-		$cacheArray[$i]['sourceurl']=$data[$i-1]['sourceurl'];
-		$cacheArray[$i]['title']=$data[$i-1]['title'];
-		$cacheArray[$i]['url_this']=$data[$i-1]['url_this'];
-		$cacheArray[$i]['title_this']=$data[$i-1]['title_this'];
-		$cacheArray[$i]['timeago']=$data[$i-1]['timeago'];
+		$k = $i-1;
+		$cacheArray[$i]['country']=$data[$k]['country'];
+		$cacheArray[$i]['area']=$data[$k]['area'];
+		$cacheArray[$i]['sourceurl']=$data[$k]['sourceurl'];
+		$cacheArray[$i]['title']=$data[$k]['title'];
+		$cacheArray[$i]['url_this']=$data[$k]['url_this'];
+		$cacheArray[$i]['title_this']=$data[$k]['title_this'];
+		$cacheArray[$i]['timeago']=$data[$k]['timeago'];
 	}
 	update_option('data_svS', $cacheArray);
 }
